@@ -45,41 +45,66 @@ El análisis abordó tres dimensiones principales:
    - Promedio y total de hectáreas afectadas por año y región.
 
 ## Visualizaciones Principales
-- 🔥**Incendios por causa**
+- **Incendios por causa**
   ![Incendios por causa](visualizations/incendios_por_causa.png)
-- 🗺️ **Mapas de concentración por estado y región (GeoPandas)**
+-  **Mapas de concentración por estado y región (GeoPandas)**
 ![Incendios por Estado](visualizations/incendios_por_estado_mapa.png)
 ![Incendios por Región](visualizations/concentracion_incendios_region.png)
 ![Incendios en México](visualizations/distribucion_incendios.png)
 
-- 📆 **Tendencia Anual y Estsacional de hectáreas afectadas**
+-  **Tendencia Anual y Estsacional de hectáreas afectadas**
 
 ![Incendios por año](visualizations/incendios_por_anio.png)
 ![Incendios por mes y año](visualizations/incendios_por_mes_anio.png)
 ![Incendios por Estación](visualizations/incendios_por_estacion.png)
 
-- 🌎 **Mapa de calor año vs mes**
+-  **Mapa de calor año vs mes**
 
 ![Año vs Mes](visualizations/heatmap_mes_anio.png)
 
-- 🌏 **Estados con más incendios**
+- **Estados con más incendios**
 ![Estados con más incendios](visualizations/estados_incendios.png)
 
-- 🔥 **Radar chart de superficie afectada por región**
+- **Radar chart de superficie afectada por región**
 ![Superficie afectada por región](visualizations/superficie_afectada_region.png)
 
-- 📍 **Municipios con mayor área afectada**
+-  **Municipios con mayor área afectada**
   
 ![Municipios con mayor área afectada](visualizations/municipios_hectareas_Afectadas.png)
 
-- 📶 **Evolución de Incendios Forestales por Estado**
+-  **Evolución de Incendios Forestales por Estado**
 ![Evolución de Incendios por Estado](visualizations/heatmap_incendios_anio_estado.png)
 
-- 🔥 **Severidad Promedio por Región**
+-  **Severidad Promedio por Región**
   ![Severidad promedio](visualizations/severidad_promedio_por_Region.png)
 
+-**Hectáreas afectadas por año**
+![Hectáreas afectadas por año](visualizations/hectareas_anio.png)
+
+- **Hectáreas promedio afectadas por año**
+  ![Hectáreas promedio afectadas por año](visualizations/hectareas_promedio.png)
+
+- **Frecuencia y Severidad**
+- ![Frecuencia y Severidad](visualizations/frecuencia_severidad_estado.png)
+
+- **Top 10 Causas con Mayor Severidad Promedio (Más hectáreas afectadas promedio)**
+  ![Causas](visualizations/causas_mayor_severidad.png)
+
+- **Municipios con más incendios severos**
+![Incendios severos por municipio](visualizations/incendios_severos_municipio.png)
+  
 ## Hallazgos Clave
-## 🧰 Tecnologías Utilizadas
+- 13,023 incendios fueron causados de manera intencional, mientras que 10,843 fueron por actividades agrícolas
+- La mayoría de los incendios se concentran en la primavera, en los meses de marzo a abril, lo que corresponde a la época de estiaje.
+- El estado con más incendios es el **Estado México**, seguido por **Jalisco** y **Michoacán**.
+- La región del Noroeste, es en donde se encuentran los incendios más severos. Así mismo, de los 5 municipios con más hectáreas afectadas, 3 son del norte.
+- En las regiones de **Centro** y **Occidente** es donde se concentran la mayor cantidad de incendios.
+- El año de 2024 es en donde más hectáreas afectadas hubo, en este año hubo un poco más de 1.6 millones de hectáreas afectadas. 
+- El promedio de hectáreas afectadas ha aumentado desde el 2021, en donde se promedió aproxidamenete 100 hectáreas por incendio, mientras que en 2025, son cerca de 200 hectáreas por incendio.
+- El estado de Guerrero es un estado que cuenta con pocos incendios, pero estos son muy severos. Por otra parte, el Estado de México cuenta con muchos incendios pero son menos destructivas.
+- Los incendios naturales y los cazadores son dos de las cinco principales causas con mayor severidad, la primera afecta 300 hectáreas, mientras que los cazadores afectan aproximadamente 150 hectárea.
+- 10 de los 12 municipios con incendios más severos se encuentran en el norte del país. 
+## Tecnologías Utilizadas
 - **Python**:
     -```pandas```
     -```matplotlib```
@@ -92,7 +117,7 @@ El análisis abordó tres dimensiones principales:
   - [Portal de Geoinformación 2025](http://www.conabio.gob.mx/informacion/gis/)
   - ["Datos.gob.mx - Incendios Forestales"](https://datos.gob.mx/dataset/incendios_forestales/resource/ddf38874-6243-4437-8f76-19f797cafa5c)
 
-## 🧩 Próximos Pasos
+## Próximos Pasos
 - Integrar variables climáticas (temperatura, precipitación, humedad).
 - Desarrollar un modelo predictivo de riesgo para incendios.
 - Crear un dashboard interactivo con Streamlit o Plotly.
